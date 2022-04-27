@@ -1,0 +1,21 @@
+.root2 {
+        width: 80%;
+        top: 800px;
+        position: absolute;
+        display: inline-block;
+        align-items: center;
+}
+
+.ca {
+        width: 80%;
+        height: 230px;
+        padding: 2px;
+}
+
+.caa {
+        border-radius: 10px;
+        border: 2px solid goldenrod;
+        overflow: hidden;
+        background-color: #272F3B;
+        height: 220px
+}

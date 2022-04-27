@@ -1,0 +1,230 @@
+body {
+        left: 0;
+        right: 0;
+        background-color: #000000;
+}
+
+.loadimg {
+        width: 150px;
+        height: 150px;
+        background-image: url(./src/load.gif);
+        background-repeat: no-repeat;
+        background-size: cover;
+        top: 50%;
+        bottom: 50%;
+        position: absolute;
+        right: 40%;
+}
+
+.toppicks {
+    color: #FFFFFF;
+    top: 140px;
+    position: absolute;
+    font-size: 18pt;
+    font-weight: bolder;
+    float: right;
+    padding-left: 10px;
+}
+
+.ra {
+    color: #FFFFFF;
+    top: 440px;
+    position: absolute;
+    font-size: 20pt;
+    font-weight: bolder;
+    float: right;
+    padding-left: 10px;
+}
+
+.homea {
+    border-radius: 10px;
+    border: 2px solid goldenrod;
+    overflow: hidden ;
+    background-color: #272F3B;
+    height: 220px
+}
+
+.raa {
+        border-radius: 10px;
+        border: 2px solid goldenrod;
+        overflow: hidden;
+        background-color: #272F3B;
+        height: 220px
+}
+
+.homep {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 8pt;
+    width: 100%;
+    height: 20px;
+}
+
+.rap {
+        color: white;
+        text-align: center;
+        font-weight: bold;
+        font-size: 8pt;
+        width: 100%;
+        height: 20px;
+}
+
+.homes {
+        color: white;
+        text-align: center;
+        font-size: 5pt;
+        width: 90px;
+        background-color: blue;
+        position: absolute;
+        border-radius: 5px;
+        bottom: 90%;
+        overflow: hidden;
+}
+
+.ras {
+        color: white;
+        text-align: center;
+        font-size: 7pt;
+        width: 90px;
+        background-color: blue;
+        position: absolute;
+        border-radius: 5px;
+        bottom: 90%;
+        overflow: hidden;
+}
+
+.home1 {
+    width: 100px;
+    height: 230px;
+    padding: 2px;
+}
+
+.ra1 {
+        width: 100px;
+        height: 230px;
+        padding: 2px;
+}
+
+.root {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    overflow-y: hidden;
+    left: 20px;
+    right: 0px;
+    top: 200px;
+    position: absolute;
+}
+
+.root1 {
+        width: 90%;
+        display: flex;
+        align-items: center;
+        overflow-y: hidden;
+        left: 20px;
+        right: 0px;
+        top: 510px;
+        position: absolute;
+}
+
+.top {
+        width: 100%;
+        background-image: url(./src/top.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        text-align: center;
+        font-size: 30px;
+        font-weight: bolder;
+        overflow: hidden;
+        position: absolute;
+        background-position: center center;
+        border-radius: 25px;
+        color: #FFFFFF;
+        float: center;
+        left: 0;
+        right: 0;
+}
+
+.side {
+        width: 0px;
+        height: 100vh;
+        background-color: rgba(255, 255, 255, 0.5);;
+        border-left: 25px solid #DFFF00;
+        border-radius: 25px;
+        position: fixed;
+        right: 0px;
+        border-width: 0px;
+        overflow: hidden;
+        transition: all 1s;
+}
+
+.button {
+        width: 50px;
+        height: 50px;
+        background-color: #DFFF00;
+        right: 0px;
+        position: fixed;
+        top: 50px;
+        border-radius: 25px;
+        text-align: center;
+        transition: all 1s;
+        border: 2px solid #FFBE00;
+}
+
+.showbtn {
+        right: 290px;
+}
+
+.showside {
+        width: 275px;
+        border-width: 25px;
+}
+
+.side a {
+        color: #7E0000;
+        padding: 20px;
+        width: 100vh;
+        display: inline-block;
+        transition: all 0.5s;
+        font-weight: bolder;
+}
+
+.side a:hover {
+        background-color: #FFBE00;
+        border-radius: 25px;
+        padding-left: 50px;
+}
+
+.side p {
+        text-align: center;
+        padding: 50px;
+        border: 2px solid #FFBE00;
+        border-radius: 25px;
+        background-color: #7E0000;
+        color: #7E0000;
+        background-image: url(./src/user.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+}
+
+.side p:hover {
+        font-size: 17px;
+        font-weight: bold;
+}
+
+.down {
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background: black;
+        position: fixed;
+        overflow: hidden;
+        top: 100vh;
+        border-radius: 25px;
+        border: 2px solid #FFBE00;
+        left: 0;
+        right: 0;
+}
