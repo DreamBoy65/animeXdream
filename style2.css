@@ -4,6 +4,7 @@
         position: absolute;
         display: inline-block;
         align-items: center;
+        overflow: hidden;
 }
 
 .ca {
