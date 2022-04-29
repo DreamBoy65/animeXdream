@@ -1,6 +1,6 @@
 .root2 {
-        width: 80%;
-        top: 800px;
+        width: 97%;
+        top: 750px;
         position: absolute;
         display: inline-block;
         align-items: center;
@@ -8,9 +8,11 @@
 }
 
 .ca {
-        width: 80%;
+        width: 97%;
         height: 230px;
         padding: 2px;
+        right: 0;
+        left: 0;
 }
 
 .caa {
@@ -19,4 +21,18 @@
         overflow: hidden;
         background-color: #272F3B;
         height: 220px
+}
+
+.cap {
+        color: white;
+        left: 190px;
+        text-align: left;
+        position: absolute;
+        padding-top: 5px;
+        width: 200px;
+        font-size: 10pt;
+}
+
+.cap2 {
+        color: darkgoldenrod;
 }

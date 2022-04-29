@@ -73,10 +73,12 @@ async function home() {
         insert("side", "side", root2)
         
         for(let e of genre) {
+                let data = await fetch("details", e.id)
+                console.log(data)
                 let div = document.createElement("div")
                 div.id = e.id + 3
                 div.classList = "ca"
-                div.innerHTML = `<div id="${e.id + 3}" class="caa"><img src="${e.image}" width="300" height="250"><p id="${e.id}" class="cap">${e.title}</p></div>`
+                div.innerHTML = `<div id="${e.id + 3}" class="caa"><img src="${e.image}" width="180" height="220"><span id="${e.id}" class="cap"><span class="cap2">Title:</span> ${e.title}<br><br><span class="cap2">Genres:</span> ${data[0].genres}<br><br><span class="cap2">Type:</span> ${data[0].type}</span></div>`
                 
                 root2.appendChild(div)
         }
