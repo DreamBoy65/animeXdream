@@ -20,7 +20,7 @@
         border: 2px solid goldenrod;
         overflow: hidden;
         background-color: #272F3B;
-        height: 220px
+        height: 215px
 }
 
 .cap {
@@ -35,4 +35,8 @@
 
 .cap2 {
         color: darkgoldenrod;
+}
+
+.ca img {
+        border: 2px solid darkslategrey;
 }
