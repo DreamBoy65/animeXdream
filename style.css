@@ -37,7 +37,7 @@ body {
 }
 
 .homea {
-    border-radius: 10px;
+    border-radius: 5px;
     border: 2px solid goldenrod;
     overflow: hidden ;
     background-color: #272F3B;
@@ -45,7 +45,7 @@ body {
 }
 
 .raa {
-        border-radius: 10px;
+        border-radius: 5px;
         border: 2px solid goldenrod;
         overflow: hidden;
         background-color: #272F3B;
@@ -141,17 +141,18 @@ body {
         overflow: hidden;
         position: absolute;
         background-position: center center;
-        border-radius: 25px;
         color: #FFFFFF;
         float: center;
         left: 0;
         right: 0;
+        top: 0vh;
+        box-shadow: 0 4px 5px whitesmoke;
 }
 
 .side {
         width: 0px;
         height: 100vh;
-        background-color: rgba(255, 255, 255, 0.5);;
+        background-color: rgba(255, 255, 255, 0.5);
         border-left: 25px solid #DFFF00;
         border-radius: 25px;
         position: fixed;
@@ -190,6 +191,13 @@ body {
         display: inline-block;
         transition: all 0.5s;
         font-weight: bolder;
+        text-decoration: none;
+}
+
+.side .box {
+        width: 24px;
+        height: 24px;
+        padding-top: 4px;
 }
 
 .side a:hover {
@@ -220,7 +228,7 @@ body {
         padding-top: 10px;
         padding-bottom: 10px;
         background: black;
-        position: fixed;
+        position: absolute;
         overflow: hidden;
         top: 97vh;
         border-radius: 25px;

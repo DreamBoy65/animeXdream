@@ -40,3 +40,195 @@
 .ca img {
         border: 2px solid darkslategrey;
 }
+.iaa img {
+        top: 120px;
+        width: 98.5%;
+        height: 500px;
+        position: absolute;
+        border: 2px solid darkgoldenrod;
+        right: 0;
+        left: 0;
+        border-radius: 25px;
+}
+
+.iaa p {
+        font-size: 10pt;
+        text-align: left;
+        color: white;
+        position: absolute;
+        top: 620px;
+        max-height: 350px;
+        overflow-x: hidden;
+}
+
+.iaa span {
+        color: darkgoldenrod;
+        font-size: 11pt;
+}
+
+.epid {
+        top: 1000px;
+        width: 97%;
+        position: absolute;
+        right: 0;
+        left: 0;
+        padding: 2px;
+        text-align: center;
+        border: 2px solid goldenrod;
+        background: rgba(255, 255, 255, 0.5);
+}
+
+.epib {
+        display: inline-block;
+        padding: 2px;
+        background-color: crimson;
+        border: 2px solid darkgoldenrod;
+        width: 50px;
+        height: 15px;
+        color: white;
+        border-radius: 5px;
+        text-align: center;
+        margin: 0.2rem;
+        font-size: 7pt;
+}
+
+.epib:hover {
+        background-color: goldenrod;
+}
+
+.off {
+        width: 99%;
+        top: 1vh;
+        position: fixed;
+        color: white;
+        background: crimson;
+        text-align: center;
+        border-radius: 25px;
+        border: 2px solid goldenrod;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        left: 0;
+        right: 0;
+}
+
+.can {
+        width: 99%;
+        background-color: rgba(255, 255, 255, 0.5);
+        position: absolute;
+        text-align: center;
+        top: 150px;
+        border-radius: 25px;
+        border: 2px solid goldenrod;
+        left: 0;
+        right: 0;
+}
+
+.can label {
+        color: crimson;
+        font-weight: bold;
+}
+
+.can input {
+        background-color: black;
+        border: 2px solid goldenrod;
+        border-radius: 10px;
+        color: white;
+        padding-left: 5px;
+}
+
+.can a {
+        right: 12px;
+        position: absolute;
+        font-size: 10pt;
+        color: goldenrod;
+        padding-top: 6px;
+        font-weight: bolder;
+}
+
+.wlcm {
+        width: 99%;
+        background-color: crimson;
+        color: whitesmoke;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        top: 200px;
+        position: absolute;
+        border-radius: 25px;
+        border: 2px solid goldenrod;
+        right: 0;
+        left: 0;
+        text-align: center;
+        font-size: 20pt;
+        font-weight: bolder;
+}
+
+.epimg {
+        width: 50px;
+        height: 50px;
+        border-radius: 35px;
+        top: 150px;
+        position: absolute;
+        border: 2px solid goldenrod;
+}
+
+.epspan {
+        width: 300px;
+        position: absolute;
+        color: darkgoldenrod;
+        top: 166px;
+        left: 70px;
+        text-decoration: none;
+}
+
+.epv {
+        width: 99%;
+        left: 0px;
+        right: 0px;
+        border: 2px solid goldenrod;
+        height: 200px;
+        position: absolute;
+        top: 360px;
+        border-radius: 25px;
+}
+
+.epdata {
+        top: 220px;
+        position: absolute;
+        color: crimson;
+        width: 99%;
+        font-size: 10pt;
+}
+
+.epdata .epdata2 {
+        color: darkgoldenrod;
+        font-size: 12pt;
+}
+
+.prev {
+        width: 80px;
+        border-radius: 25px;
+        border: 2px solid goldenrod;
+        background-color: crimson;
+        color: darkgoldenrod;
+        font-size: 10pt;
+        position: absolute;
+        top: 580px;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+}
+
+.next {
+        width: 80px;
+        border-radius: 25px;
+        border: 2px solid goldenrod;
+        background-color: crimson;
+        color: darkgoldenrod;
+        font-size: 10pt;
+        position: absolute;
+        top: 580px;
+        right: 0px;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+}
