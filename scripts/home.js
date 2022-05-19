@@ -3,19 +3,12 @@ import { check } from "../modules/check.js"
 
 window.onload = async function() {
         sidebar()
-        check()
+        await check()
         load()
         
         let popular = []
         let ra = []
         let genre = []
-        
-        let datat = await findu(localStorage.getItem("id"))
-        
-        if(datat) {
-                document.getElementById("usernamep").innerText = datat.username
-                document.getElementById("usernamea").href = "../pages/user.html"
-        }
         
         let genres = await fetchg()
         

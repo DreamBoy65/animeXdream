@@ -1,4 +1,8 @@
+import { sidebar } from "../modules/sidebar.js"
+import { check } from "../modules/check.js"
+
 window.onload = async function() {
+        await check()
         document.getElementById("form").addEventListener('submit', async(e) => {
                 e.preventDefault()
                 
@@ -8,7 +12,7 @@ window.onload = async function() {
                 
                 if(dat) {
                         if(dat.password !== data.pass) {
-                                return alert("Wrong password!\nChange username to create new account or join discord to change password!")
+                                return err("Wrong password!\nChange username to create new account or join discord to change password!")
                         }
                         
                         let div = document.createElement("div")

@@ -1,8 +1,10 @@
 import { sidebar } from "../modules/sidebar.js"
+import { check } from "../modules/check.js"
 
 window.onload = async function() {
+        await check()
         sidebar()
-        let id = window.location.href.split("?")[1]
+        let id = window.location.href.split("?")[1] || "tokyo-ghoul"
         
         if(id) {
                 load()
@@ -10,7 +12,9 @@ window.onload = async function() {
                 
                 let div = document.createElement("div")
                 div.className = "ia"
-                div.innerHTML = `<div class="iaa"><img src="${data.animeImg}" height="200" width="150"><p>
+                div.innerHTML = `<div class="iaa"><img src="${data.animeImg}" height="200" width="150">
+                <button class="atw" id="atw">Add To Watchlist</button> <button class="atf" id="atf">Add To Favorites</button>
+                <p>
                 <span>Title:</span> ${data.animeTitle}
                 <br><span>Type:</span> ${data.type}
                 <br><span>Released:</span> ${data.releasedDate}
@@ -44,6 +48,45 @@ window.onload = async function() {
                         document.getElementById("epid").appendChild(btn)
                 }
                 
+                let idd = localStorage.getItem("id")
+                let Data = await findu(idd)
+                
+                if(Data.watchlist.find(c => c === id)) {
+                        document.getElementById("atw").innerText = "Remove From Watchlist"
+                }
+                
+                if(Data.favorites.find(c => c === id)) {
+                        document.getElementById("atf").innerText = "Remove From Favorites"
+                }
+                
+                
+                document.getElementById("atw").onclick = async function() {
+                        let d = await findu(idd)
+                        if(d.watchlist.find(c => c === id)) {
+                                d.watchlist = d.watchlist.filter(c => c !== id)
+                                await createu(idd, d)
+                                
+                                document.getElementById("atw").innerText = "Add To Watchlist"
+                        } else {
+                                d.watchlist.push(id)
+                                await createu(idd, d)
+                                document.getElementById("atw").innerText = "Remove From Watchlist"
+                        }
+                }
+                
+                document.getElementById("atf").onclick = async function() {
+                        let d = await findu(idd)
+                        if (d.favorites.find(c => c === id)) {
+                                d.favorites = d.favorites.filter(c => c !== id)
+                                await createu(idd, d)
+                
+                                document.getElementById("atf").innerText = "Add To Favorites"
+                        } else {
+                                d.favorites.push(id)
+                                await createu(idd, d)
+                                document.getElementById("atf").innerText = "Remove From Favorites"
+                        }
+                }
                 unload()
         }
 }

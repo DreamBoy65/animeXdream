@@ -52,7 +52,6 @@ async function fetchg() {
 async function fetche(id) {
         return await axios(`https://gogoanime.herokuapp.com/vidcdn/watch/${id}`)
         .then(data => {
-                console.log(data)
                 return data.data
         }).catch(e => {
                 return e
@@ -103,4 +102,15 @@ async function createu (id, Data) {
         })
         
         return data;
+}
+
+function err(msg) {
+        let div = document.createElement("div")
+        div.className = "off"
+        div.id = "off"
+        div.innerText = msg
+        
+        document.body.appendChild(div)
+        
+        setTimeout(() => document.body.removeChild(div), 2000)
 }
